@@ -2,7 +2,7 @@ def suma(num1,num2):
     return "Suma"
 
 def resta(num1,num2):
-    return "Resta"
+    return str(num1 - num2)
 
 def divide(num1,num2):
     return "Divide"
