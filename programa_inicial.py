@@ -8,11 +8,23 @@ def divide(num1,num2):
     return "Divide"
 
 def mul(num1,num2):
-    return "Mul"
+    return str(num1 * num2)
 
-num1= float(input("Ingrese el primer operando"))
-num2= float(input("Ingrese el segundo operando"))
-op = str(input("Ingrese su operación. Operaciones disponibles: + , - , / , *"))
+def leer_numero():
+    valido = False
+    while not valido:
+        try:
+            num= float(input())
+            valido = True
+        except ValueError:
+            print("Eso no es un número válido! Ingrese un número válido: ")
+    return num
+
+print("Ingrese el primer operando: ")
+num1= leer_numero()
+print("Ingrese el segundo operando: ")
+num2= leer_numero()
+op = input("Ingrese su operación. Operaciones disponibles: + , - , / , * \n")
 
 match op:
     case "+":
