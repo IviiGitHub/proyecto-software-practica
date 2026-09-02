@@ -1,0 +1,27 @@
+def suma(num1,num2):
+    return "Suma"
+
+def resta(num1,num2):
+    return "Resta"
+
+def divide(num1,num2):
+    return "Divide"
+
+def mul(num1,num2):
+    return "Mul"
+
+num1= float(input("Ingrese el primer operando"))
+num2= float(input("Ingrese el segundo operando"))
+op = str(input("Ingrese su operación. Operaciones disponibles: + , - , / , *"))
+
+match op:
+    case "+":
+        print(suma(num1,num2))
+    case "-":
+        print(resta(num1,num2))
+    case "/":
+        print(divide(num1,num2))
+    case "*":
+        print(mul(num1,num2))
+    case _:
+        print("Operación Inválida!")
