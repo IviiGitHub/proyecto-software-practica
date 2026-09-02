@@ -5,7 +5,11 @@ def resta(num1,num2):
     return str(num1 - num2)
 
 def divide(num1,num2):
-    return "Divide"
+    match num2:
+        case 0:
+            return "Error: División por cero!"
+        case _:
+            return str(num1 / num2)
 
 def mul(num1,num2):
     return "Mul"
