@@ -8,7 +8,7 @@ def divide(num1,num2):
     return "Divide"
 
 def mul(num1,num2):
-    return "Mul"
+    return str(num1 * num2)
 
 num1= float(input("Ingrese el primer operando"))
 num2= float(input("Ingrese el segundo operando"))
